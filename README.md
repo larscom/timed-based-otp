@@ -6,3 +6,7 @@
 > Create, search and backup/restore (encrypted) TOTP accounts via an easy to use web interface. No data is sent over the network once the page is loaded, everything stays in the browser.
 
 ### ✨ [timed-based-otp.web.app](https://timed-based-otp.web.app)
+
+# Notice :fire:
+
+This app is under development, not all features might be implemented yet :wink:
