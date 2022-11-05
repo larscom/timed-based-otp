@@ -1,0 +1,10 @@
+:host {
+  display: inline-table;
+  vertical-align: middle;
+
+  .content {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+}

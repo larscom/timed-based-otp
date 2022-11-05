@@ -1,0 +1,29 @@
+.high-progress-bar {
+  .mat-progress-bar-fill::after {
+    @extend .success-bg;
+  }
+
+  .mat-progress-bar-buffer {
+    background: $light;
+  }
+}
+
+.medium-progress-bar {
+  .mat-progress-bar-fill::after {
+    @extend .warning-bg;
+  }
+
+  .mat-progress-bar-buffer {
+    background: $light;
+  }
+}
+
+.low-progress-bar {
+  .mat-progress-bar-fill::after {
+    @extend .error-bg;
+  }
+
+  .mat-progress-bar-buffer {
+    background: $light;
+  }
+}

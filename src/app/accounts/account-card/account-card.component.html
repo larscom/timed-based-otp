@@ -1,0 +1,57 @@
+<mat-card [ngClass]="disableNavigation ? null : 'hover'"
+  [routerLink]="disableNavigation ? null : [account.uuid]">
+  <div class="flex flex-col justify-between h-full">
+
+    <div class="flex gap-2">
+
+      <div class="flex flex-col gap-2 flex-1">
+        <div><b>Issuer</b></div>
+        <div>{{ account.issuer }}</div>
+      </div>
+
+      <div class="flex flex-col gap-2 flex-1">
+        <div><b>Label</b></div>
+        <div>{{ account.label }}</div>
+      </div>
+
+      <div class="flex gap-2 flex-1">
+        <div class="flex flex-col gap-2">
+          <div><b>Algorithm</b></div>
+          <app-badge [content]="account.algorithm"
+            color="#7C4DFF">
+          </app-badge>
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <div><b>Digits</b></div>
+          <app-badge [content]="account.digits"
+            color="#536DFE">
+          </app-badge>
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <div><b>Period</b></div>
+          <app-badge [content]="account.period"
+            color="#448AFF">
+          </app-badge>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-2">
+        <div><b>Token</b></div>
+        <app-account-token [account]="account"></app-account-token>
+      </div>
+
+      <div class="flex flex-col justify-center">
+        <app-token-copy [account]="account"></app-token-copy>
+      </div>
+
+    </div>
+
+    <mat-card-footer>
+      <app-account-timer></app-account-timer>
+    </mat-card-footer>
+
+  </div>
+
+</mat-card>

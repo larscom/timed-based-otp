@@ -1,0 +1,16 @@
+<h1>Accounts</h1>
+<mat-form-field appearance="outline">
+  <mat-label>Search</mat-label>
+  <input [formControl]="search"
+    cdkTrapFocus
+    cdkTrapFocusAutoCapture
+    matInput>
+</mat-form-field>
+
+<cdk-virtual-scroll-viewport itemSize="85">
+
+  <ng-container *cdkVirtualFor="let account of accounts$ | async">
+    <app-account-card [account]="account"></app-account-card>
+  </ng-container>
+
+</cdk-virtual-scroll-viewport>

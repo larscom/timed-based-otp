@@ -1,0 +1,30 @@
+$dark: #212121;
+$light: #616161;
+$lighter: #9E9E9E;
+$success: #00e676;
+$warning: #ff9100;
+$error: #ff1744;
+
+.success-text {
+  color: $success;
+}
+
+.warning-text {
+  color: $warning;
+}
+
+.error-text {
+  color: $error;
+}
+
+.success-bg {
+  background-color: $success;
+}
+
+.warning-bg {
+  background-color: $warning;
+}
+
+.error-bg {
+  background-color: $error;
+}

@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './styles/colors';
+@import './styles/progress_bar';
+
+html {
+  height: 93vh;
+}
+
+body {
+  overflow: hidden;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  background: $dark;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 0.2rem;
+  height: 0.2rem;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $lighter;
+}

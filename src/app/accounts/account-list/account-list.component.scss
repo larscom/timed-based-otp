@@ -1,0 +1,12 @@
+@import 'colors';
+
+cdk-virtual-scroll-viewport {
+  height: 82vh;
+}
+
+::ng-deep .cdk-virtual-scroll-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0px 5px;
+}
