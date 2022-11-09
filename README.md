@@ -7,6 +7,6 @@
 
 ### ✨ [timed-based-otp.web.app](https://timed-based-otp.web.app)
 
-# Notice :fire:
+# :fire: Notice
 
 This app is under development, not all features might be implemented yet :wink:
